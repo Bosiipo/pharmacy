@@ -58,3 +58,12 @@
   font-size: 13px;
   font-weight: bold;
 }
+
+.header-optionBasket {
+  display: flex;
+  align-items: center;
+}
+
+.header-basketCount {
+  margin: 0 10px;
+}

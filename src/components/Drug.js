@@ -11,16 +11,18 @@ function Drug() {
       />
       <div className="drug__info">
         <p> Panadol Extra</p>
-        <p className="product__price">
+        <p className="drug__price">
           <small>GHC</small>
           <strong>12</strong>
         </p>
+        <div className="drug__rating">
+          <p>⭐️</p>
+          <p>⭐️</p>
+          <p>⭐️</p>
+        </div>
       </div>
-      <div className="drug__rating">
-        <p>⭐️</p>
-        <p>⭐️</p>
-        <p>⭐️</p>
-      </div>
+
+      <button className="drug__button">Add to Cart</button>
     </div>
   );
 }

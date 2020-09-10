@@ -1,0 +1,41 @@
+.drug {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 10px;
+  padding: 20px;
+  width: 100%;
+  max-height: 400px;
+  min-width: 100px;
+  background-color: #fff;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.drug__image {
+  max-height: 200px;
+  width: 100px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+.drug__info {
+  height: 70px;
+  margin-bottom: 15px;
+}
+
+.drug__price {
+  margin-top: 5px;
+}
+
+.drug__rating {
+  display: flex;
+}
+
+.drug__button {
+  border: 0.5px solid #00a79d;
+  padding: 4px 10px;
+  border-radius: 20px;
+  background-color: #2aa9e0;
+  margin-top: 10px;
+}

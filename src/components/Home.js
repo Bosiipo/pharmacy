@@ -14,9 +14,16 @@ function Home() {
 
         <div className="home__row">
           <Drug />
+          <Drug />
         </div>
-        <div className="home__row"> </div>
-        <div className="home__row"> </div>
+        <div className="home__row">
+          <Drug />
+          <Drug />
+          <Drug />
+        </div>
+        <div className="home__row">
+          <Drug />
+        </div>
       </div>
     </div>
   );

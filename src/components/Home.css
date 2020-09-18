@@ -3,18 +3,25 @@
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1500px;
+  max-width: 1000px;
 }
 
 .home__image {
   width: 100%;
   z-index: -1;
-  margin-bottom: -150px;
+  margin-bottom: -200px;
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+@media (min-width: 1000px) {
+  .home__image {
+    margin-bottom: -80vh;
+  }
 }
 
 .home__row {
   display: flex;
   z-index: 1;
-  margin: 0 5px;
+  margin-left: 5px;
+  margin-right: 5px;
 }

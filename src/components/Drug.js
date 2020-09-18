@@ -1,36 +1,26 @@
 import React from "react";
 import "./Drug.css";
 
-function Drug() {
+function Drug({ title, image, price, rating }) {
   return (
     <div className="drug">
-      <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTa17jKXmeqNMYBYTQnabvKvlefUGadudWUpA&usqp=CAU"
-        alt=""
-        className="drug__image"
-      />
+      <img src={image} alt="" className="drug__image" />
       <div className="drug__info">
-        <p> Panadol Extra</p>
+        <p> {title}</p>
         <p className="drug__price">
           <small>GHC</small>
-          <strong>12</strong>
+          <strong>{price}</strong>
         </p>
         <div className="drug__rating">
-          <p>
-            <span role="img" aria-label="star">
-              ⭐️
-            </span>
-          </p>
-          <p>
-            <span role="img" aria-label="star">
-              ⭐️
-            </span>
-          </p>
-          <p>
-            <span role="img" aria-label="star">
-              ⭐️
-            </span>
-          </p>
+          {Array(rating)
+            .fill()
+            .map((rat, id) => (
+              <p key={id}>
+                <span role="img" aria-label="star">
+                  ⭐️
+                </span>
+              </p>
+            ))}
         </div>
       </div>
 

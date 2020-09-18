@@ -16,9 +16,21 @@ function Drug() {
           <strong>12</strong>
         </p>
         <div className="drug__rating">
-          <p>⭐️</p>
-          <p>⭐️</p>
-          <p>⭐️</p>
+          <p>
+            <span role="img" aria-label="star">
+              ⭐️
+            </span>
+          </p>
+          <p>
+            <span role="img" aria-label="star">
+              ⭐️
+            </span>
+          </p>
+          <p>
+            <span role="img" aria-label="star">
+              ⭐️
+            </span>
+          </p>
         </div>
       </div>
 

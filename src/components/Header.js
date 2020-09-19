@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 import SearchIcon from "@material-ui/icons/Search";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
@@ -6,7 +7,9 @@ import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 function Header() {
   return (
     <div className="header">
-      <p className="header-logo">Pharma</p>
+      <Link to="/">
+        <p className="header-logo">Pharma</p>
+      </Link>
 
       <div className="header-search">
         <input
@@ -32,7 +35,9 @@ function Header() {
           <span className="header-optionLineTwo">Prime</span>
         </div>
         <div className="header-optionBasket">
-          <ShoppingCartIcon />
+          <Link to="/checkout">
+            <ShoppingCartIcon />
+          </Link>
           <span className="header-optionLineTwo header-basketCount">0</span>
         </div>
       </div>
